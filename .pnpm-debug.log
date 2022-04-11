@@ -1,0 +1,23 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "not found: insall",
+      "code": "ENOENT",
+      "stack": "Error: not found: insall\n    at getNotFoundError (/usr/local/pnpm-global/4/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:41440:51)\n    at Function.whichSync [as sync] (/usr/local/pnpm-global/4/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:41517:13)\n    at getCommandAbsolutePathSync (/usr/local/pnpm-global/4/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:43082:44)\n    at default_1 (/usr/local/pnpm-global/4/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:43091:32)\n    at /usr/local/pnpm-global/4/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:179684:39"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "prefix": "/home/workspace/reactjs/coding-practices/jobbyApp",
+    "err": {
+      "name": "pnpm",
+      "message": "not found: insall",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: not found: insall\n    at getNotFoundError (/usr/local/pnpm-global/4/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:41440:51)\n    at Function.whichSync [as sync] (/usr/local/pnpm-global/4/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:41517:13)\n    at getCommandAbsolutePathSync (/usr/local/pnpm-global/4/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:43082:44)\n    at default_1 (/usr/local/pnpm-global/4/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:43091:32)\n    at /usr/local/pnpm-global/4/node_modules/.pnpm/pnpm@6.24.3/node_modules/pnpm/dist/pnpm.cjs:179684:39"
+    }
+  }
+}

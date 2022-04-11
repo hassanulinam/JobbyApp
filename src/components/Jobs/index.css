@@ -1,0 +1,153 @@
+.jobs-route-container {
+  background-color: #000000;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jobs-route-contents {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 5% 40px 5%;
+  width: 100%;
+}
+
+.profile-and-filters-container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-left: 8px;
+}
+
+hr {
+  border: 1px solid white;
+  width: 100%;
+  margin: 0px 0 10px 0;
+}
+
+.profile-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.profile-card-container {
+  align-self: flex-start;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 16px;
+  color: grey;
+  margin-bottom: 30px;
+  width: 100%;
+  min-width: 300px;
+}
+
+.profile-heading {
+  color: #6366f1;
+  margin: 10px 0 10px 0;
+}
+
+.filters-heading {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.filter-input-container {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.job-results-container {
+  width: 100%;
+  font-size: 16px;
+}
+
+.no-jobs-view-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-jobs-img {
+  width: 200px;
+}
+
+.loader-view-wrapper {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-container {
+  align-self: center;
+}
+
+.search-bar-container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.search-input {
+  padding: 5px 15px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  width: 400px;
+}
+
+.search-btn {
+  border: none;
+  background-color: rgba(200, 200, 200, 0.2);
+  padding: 10px;
+  width: 80px;
+}
+
+@media (min-width: 1000px) {
+  .profile-card-container,
+  .filter-input-container,
+  .search-input,
+  .job-results-container {
+    font-size: 18px;
+  }
+
+  .filters-heading {
+    font-size: 22px;
+  }
+
+  .jobs-route-contents {
+    width: 85%;
+    flex-direction: row;
+  }
+  .profile-and-filters-container {
+    margin-right: 30px;
+  }
+
+  .job-results-container {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  .loader-view-wrapper {
+    height: 50vh;
+  }
+
+  .no-jobs-img {
+    width: 500px;
+  }
+}
