@@ -138,7 +138,7 @@ class Jobs extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="loader-container" testid="loader">
+    <div className="loader-container">
       <Loader type="ThreeDots" color="#ffffff" height="80" width="80" />
     </div>
   )
@@ -154,12 +154,7 @@ class Jobs extends Component {
           onChange={this.changeSearchInput}
           className="search-input"
         />
-        <button
-          type="button"
-          testid="searchButton"
-          onClick={this.getJobsData}
-          className="search-btn"
-        >
+        <button type="button" onClick={this.getJobsData} className="search-btn">
           <BsSearch className="search-icon" color="#ffffff" size="20" />
         </button>
       </div>

@@ -1,0 +1,12 @@
+diff --git a/node_modules/js-cookie/src/js.cookie.js b/node_modules/js-cookie/src/js.cookie.js
+index 80a7551..a0be970 100644
+--- a/node_modules/js-cookie/src/js.cookie.js
++++ b/node_modules/js-cookie/src/js.cookie.js
+@@ -135,6 +135,7 @@
+ 					}
+ 				} catch (e) {}
+ 			}
++			console.log('[js-cookie]: get()')
+ 
+ 			return key ? jar[key] : jar;
+ 		}
