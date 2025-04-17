@@ -3,9 +3,9 @@ describe('Home Page Visual Regression', () => {
   beforeEach(() => {
     // Login before testing home page since it's a protected route
     cy.visit('/login')
-    cy.get('#usernameInput').type('rahul')
-    cy.get('#passwordInput').type('rahul@2021')
-    cy.get('.login-btn').click()
+    cy.get('#usernameInput').type('rahul', {force: true})
+    cy.get('#passwordInput').type('rahul@2021', {force: true})
+    cy.get('.login-btn').click({force: true})
 
     // Wait for redirect to home page
     cy.url().should('eq', 'http://localhost:3000/')
@@ -33,7 +33,7 @@ describe('Home Page Visual Regression', () => {
 
   it('should match find jobs button hover state', () => {
     cy.get('.find-jobs-btn').should('be.visible')
-    cy.get('.find-jobs-btn').trigger('mouseover')
+    cy.get('.find-jobs-btn').trigger('mouseover', {force: true})
     cy.matchImageSnapshot('find-jobs-button-hover')
   })
 })

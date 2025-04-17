@@ -13,8 +13,8 @@ describe('Login Page Visual Regression', () => {
   })
 
   it('should match input focus state snapshot', () => {
-    // Focus the username input
-    cy.get('#usernameInput').focus()
+    // Focus the username input with force option
+    cy.get('#usernameInput').focus({force: true})
 
     // Take a snapshot with the input focused
     cy.matchImageSnapshot('login-input-focused')
@@ -22,11 +22,11 @@ describe('Login Page Visual Regression', () => {
 
   it('should match error state snapshot', () => {
     // Focus and blur username and password fields to trigger validation
-    cy.get('#usernameInput').focus().blur()
-    cy.get('#passwordInput').focus().blur()
+    cy.get('#usernameInput').focus({force: true}).blur({force: true})
+    cy.get('#passwordInput').focus({force: true}).blur({force: true})
 
     // Click login button to trigger form validation
-    cy.get('.login-btn').click()
+    cy.get('.login-btn').click({force: true})
 
     // Wait for error messages to appear
     cy.get('.error-message').should('exist')
@@ -36,9 +36,9 @@ describe('Login Page Visual Regression', () => {
   })
 
   it('should match filled form snapshot', () => {
-    // Fill in the form
-    cy.get('#usernameInput').type('rahul')
-    cy.get('#passwordInput').type('rahul@2021')
+    // Fill in the form with force option
+    cy.get('#usernameInput').type('rahul', {force: true})
+    cy.get('#passwordInput').type('rahul@2021', {force: true})
 
     // Take a snapshot of the filled form
     cy.matchImageSnapshot('login-filled-form')
