@@ -36,6 +36,11 @@
   color: white;
 }
 
+.input-field:focus {
+  outline: none;
+  border-color: #b6c5ff;
+}
+
 .login-btn {
   padding: 10px;
   font-size: 17px;
